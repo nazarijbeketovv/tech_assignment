@@ -3,7 +3,6 @@ from django.http import StreamingHttpResponse
 from apps.task_2.models.game import LevelPrize, PlayerLevel
 
 
-
 class Echo:
     """Класс для эмуляции записи строки в StreamingHttpResponse"""
 
@@ -14,7 +13,7 @@ class Echo:
 def export_player_levels_to_csv():
     # Генератор для стриминга данных
     def generate():
-        # Добавляем заголовки
+        # Заголовки
         yield ["player_id", "level", "is_completed", "prizes"]
 
         # Получаем данные для выгрузки
