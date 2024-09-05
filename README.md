@@ -80,3 +80,9 @@
 ```bash
 ./manage.py test apps
 ```
+
+Запуск сервера:
+
+```bash
+./manage.py runserver --settings=config.settings.base 
+```
