@@ -20,6 +20,7 @@ class Player(models.Model):
     last_login = models.DateTimeField(
         null=True, blank=True, verbose_name="Последний вход"
     )
+    
 
     def update_login(self):
         """

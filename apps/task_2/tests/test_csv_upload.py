@@ -1,8 +1,9 @@
 import csv
 from django.test import TestCase
 from django.utils import timezone
-from ..models import Player, Level, PlayerLevel, Prize, LevelPrize
-from ..utils import export_player_levels_to_csv
+
+from apps.task_2.models.game import Level, LevelPrize, Player, PlayerLevel, Prize
+from apps.task_2.services.csv_upload import export_player_levels_to_csv
 
 
 class ExportPlayerLevelsToCsvTestCase(TestCase):

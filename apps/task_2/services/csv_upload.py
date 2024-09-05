@@ -1,5 +1,7 @@
 from django.http import StreamingHttpResponse
-from .models import LevelPrize, PlayerLevel
+
+from apps.task_2.models.game import LevelPrize, PlayerLevel
+
 
 
 class Echo:

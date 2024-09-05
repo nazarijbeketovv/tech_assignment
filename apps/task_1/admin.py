@@ -1,5 +1,7 @@
 from django.contrib import admin
-from .models import Player, Boost
+
+from apps.task_1.models.player import Boost, Player
+
 
 
 @admin.register(Player)

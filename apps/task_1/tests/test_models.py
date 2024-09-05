@@ -2,7 +2,9 @@ from django.test import TestCase
 from django.contrib.auth import get_user_model
 from django.utils import timezone
 from datetime import timedelta
-from ..models import Player, Boost
+
+from apps.task_1.models.player import Boost, Player
+
 
 
 class PlayerModelTests(TestCase):

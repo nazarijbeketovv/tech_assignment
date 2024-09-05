@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Player, Level, Prize, PlayerLevel, LevelPrize
+
+from apps.task_2.models.game import Level, LevelPrize, Player, PlayerLevel, Prize
 
 
 @admin.register(Player)

@@ -1,7 +1,9 @@
 from django.db import transaction
 from django.utils import timezone
 
-from .models import LevelPrize, PlayerLevel, Prize
+from apps.task_2.models.game import LevelPrize, PlayerLevel, Prize
+
+
 
 
 def assign_prize_to_player(player_id, level_id):

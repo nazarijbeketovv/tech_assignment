@@ -1,7 +1,9 @@
 from django.test import TestCase
 from django.utils import timezone
-from ..models import Player, Level, PlayerLevel, Prize, LevelPrize
-from ..game_logic import assign_prize_to_player
+
+from apps.task_2.models.game import Player
+from apps.task_2.models.game import Level, LevelPrize, PlayerLevel, Prize
+from apps.task_2.services.game_logic import assign_prize_to_player
 
 
 class PrizeAssignmentTestCase(TestCase):
