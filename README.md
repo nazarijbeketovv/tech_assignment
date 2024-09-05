@@ -73,5 +73,5 @@
 Запуск тестов:
 
 ```bash
-./manage.py test app
+./manage.py test apps
 ```
